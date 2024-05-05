@@ -14,4 +14,3 @@ sequelize.authenticate().then(() => {
 })
 module.exports = sequelize;
 
-console.log("ANOTHER TASK")

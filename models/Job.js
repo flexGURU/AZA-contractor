@@ -1,4 +1,10 @@
 // models/Job.js
+const { Model, DataTypes } = require('sequelize');
+const sequelize = require('../database'); // make sure this points to your actual Sequelize connection file
+
+class Job extends Model {}
+
+// models/Job.js
 Job.init({
   id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
   jobType: { type: DataTypes.STRING, allowNull: false },
@@ -13,3 +19,6 @@ Job.init({
   tableName: 'jobs',
   timestamps: false
 });
+
+
+module.exports = Job;
