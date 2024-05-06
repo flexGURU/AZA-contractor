@@ -1,2 +1,4 @@
 # Node modules
 node_modules/
+# Ignore node_modules in front/app directory
+/front/AZA-contractor/node_modules/
